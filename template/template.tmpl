@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"<TMPL_VAR NAME=IEHACK>>
+<head>
+<title>MythExport</title>
+    <link rel="stylesheet" type="text/css" href="includes/global.css" />
+    <!-- compliance patch for microsoft browsers -->
+    <!--[if lt IE 8]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js" type="text/javascript"></script>
+    <![endif]-->
+    <TMPL_VAR NAME=SCRIPT>
+    <TMPL_VAR NAME=CSS>
+</head>
+<body id="<TMPL_VAR NAME=LOCATION>" <TMPL_VAR NAME=BODY_VARS>>
+	<div id="header" />
+	<div id="menu">
+		<ul class="navigation">
+	        <li class="setup"><a href="setup.cgi">MythExport Setup</a></li>
+			<li class="system"><a href="system_setup.cgi">System Setup</a></li>
+			<li class="userjob"><a href="stream.cgi">Streaming</a></li>
+	        <li class="rss"><a href="rss.cgi">RSS Feed</a></li>
+	        <li class="otg"><a href="otg.cgi">On the Go</a></li>
+	        <li class="file"><a href="file.cgi">File Maintenance</a></li>
+			<li class="job"><a href="job_queue.cgi">Job Queue</a></li>
+	    </ul>
+		<br />
+		<ul class="navigation">
+			<li><a href="http://www.mythbuntu.org/wiki/MythExport">Help</a></li>
+		</ul>
+	</div>
+	<div id="content">
+		<TMPL_VAR NAME=CONTENT>
+        <div class="clear">&nbsp;</div>
+	</div>
+	<div id="buttons">
+			<a title="Powered By Ubuntu" href="http://www.ubuntu.com"><img src="images/powered_ubuntu_80x15_2.png" alt="Powered By Ubuntu" width="80" height="15" /></a>
+			<a title="Powered By Apache" href="http://www.apache.org/"><img src="images/powered_apache_80x15_2.png" alt="Powered By Apache" width="80" height="15" /></a>
+			<a title="Powered By MySQL" href="http://www.mysql.com"><img src="images/powered_mysql_80x15_2.png" alt="Powered By MySQL" width="80" height="15" /></a>
+    </div>
+</body>
+</html>
