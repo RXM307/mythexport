@@ -4,6 +4,7 @@ use strict;
 use CGI qw(:standard);
 use HTML::Template;
 
+use lib '/var/www/mythexport';
 require includes;
 
 my $podcast_name = param("podcastName");
